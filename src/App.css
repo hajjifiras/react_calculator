@@ -1,0 +1,149 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.all{
+background-color:rgba(75, 74, 74, 0.274);
+border-radius:5px;
+border-radius:5px;
+width:200px;
+height:285px;
+}
+#calculator-body{
+
+width:200px;
+height:200px;
+display:grid;
+grid-template-columns: repeat(4,50px);
+grid-template-rows: 40px;
+gap:0px;
+}
+.result{
+  height:40px;
+  width:190px;
+  border:none;
+  background:none;
+}
+#two{
+ color:#fff;
+ direction:rtl;
+ font-size:40px;
+}
+#one{
+ color:#fff;
+ direction:rtl;
+}
+#equal{
+  color:#fff;
+  grid-column-start:3;
+  grid-column-end:5;
+}
+#equal:hover{
+  color:#fff;
+  background:#ff95149c;
+}
+p::selection{
+  background:#ff9514;
+  color:#fff;
+}
+button{
+  border-radius:5px;
+  border:none;
+  background:transparent;
+  
+  height:40px;
+  font-weight:bold;
+  
+}
+button:hover{
+  cursor:pointer;
+  background-color:rgba(75, 74, 74, 0.4);
+}
+.number{
+  color:#39b5eec4;
+}
+.number:hover{
+  color:#fff;
+}
+.operator{
+  color:#ff9514;
+}
+.operator:hover{
+  color:#39b5eec4;
+}
+body{
+  background-image: linear-gradient(
+    100deg,
+      hsl(14deg 90% 47%) 0%,
+      hsl(19deg 97% 46%) 5%,
+      hsl(22deg 100% 46%) 10%,
+      hsl(25deg 100% 47%) 15%,
+      hsl(27deg 100% 47%) 21%,
+      hsl(29deg 100% 48%) 26%,
+      hsl(32deg 100% 49%) 31%,
+      hsl(34deg 100% 49%) 37%,
+      hsl(36deg 100% 49%) 42%,
+      hsl(38deg 100% 50%) 48%,
+      hsl(41deg 100% 50%) 54%,
+      hsl(43deg 100% 50%) 60%,
+      hsl(45deg 100% 50%) 66%,
+      hsl(48deg 100% 50%) 73%,
+      hsl(50deg 100% 50%) 81%,
+      hsl(53deg 100% 50%) 92%,
+      hsl(55deg 100% 50%) 100%
+      
+    );
+    background-attachment:fixed;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+    background-size:400% 400% !important;
+    animation:gradient 15s ease infinite;
+}
+/*@keyframes gradient{
+  0%{
+    background-position:0% 50%;
+  }
+  50%{
+    background-position:1000% 50%;
+  }
+  100%{
+    background-position:0% 50%;
+  }
+}
+*/
